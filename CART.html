@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech - Add to Cart</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <center>
+        <font size="3%">
+            <h1>ADD TO Cart</h1>
+            <hr>
+        </font>
+
+        <form action="/action.php">
+            <table>
+                <tr>
+                    <td>YOUR CELL NO:</td>
+                    <td><input type="number" placeholder="Enter your cell number" required></td>
+                </tr>
+                <tr>
+                    <td>ADDRESS:</td>
+                    <td><input type="text" placeholder="Enter your address" required></td>
+                </tr>
+                <tr>
+                    <td>Gmail Id:</td>
+                    <td><input type="text" placeholder="ID HERE" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" value="Female" name="gender" required>Female
+                        <input type="radio" value="Male" name="gender" required>Male
+                    </td>
+                </tr>
+                <tr>
+                    <td><b> Your Province :</b></td>
+                    <td>
+                        <input type="radio" value="Province">Punjab
+                        <input type="radio" value="Province">Sindh
+                        <input type="radio" value="ProvincE">Balochistan
+                        <input type="radio" value="ProvincE">KPK
+                    </td>
+                </tr>
+                
+                   
+            </table>
+            <br>
+            <input type="submit" value="Add to Cart">
+        </form>
+    </center>
+
+</body>
+
+</html>
